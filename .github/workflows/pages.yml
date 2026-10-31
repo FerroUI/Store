@@ -1,0 +1,63 @@
+name: GitHub Pages
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ferro-store-pages-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Cache browser toolchain
+        uses: actions/cache@v4
+        with:
+          path: ~/browser-tools
+          key: ferro-store-emsdk-6.0.10-rust-1.99-wasm-bindgen-0.2.129-${{ runner.os }}
+      - name: Set up Ferro browser toolchain
+        run: vendor/FerroUI/scripts/browser/setup.sh ~/browser-tools
+      - uses: Swatinem/rust-cache@v2
+      - name: Build native Ferro storefront and static catalog
+        run: |
+          source ~/browser-tools/env.sh
+          npm run build
+      - name: Install browser for end-to-end checks
+        run: npx playwright install --with-deps chromium
+      - name: Test the storefront
+        run: npx playwright test
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-test-results
+          path: test-results
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - uses: actions/deploy-pages@v4
+        id: deployment

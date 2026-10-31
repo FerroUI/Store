@@ -1,0 +1,7 @@
+/target/
+/dist/
+/node_modules/
+/artifacts/
+.DS_Store
+/test-results/
+/playwright-report/

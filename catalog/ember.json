@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "ember",
+  "name": "Ember",
+  "summary": "A little curiosity, every day.",
+  "description": "A thoughtful, touch-friendly Hacker News reader. Find the stories, ideas and conversations that make you pause, in an uncluttered FerroUI interface.",
+  "category": "News",
+  "author": "FerroUI",
+  "icon": "icon.svg",
+  "accent": "#F2946B",
+  "launch": {
+    "url": "./",
+    "mode": "embed"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/FerroUI/Ember/00ee6e012798750695c7ae132626870fc5769ebd/docs/images/ember-desktop-light.png",
+      "alt": "Ember front page and a Hacker News discussion"
+    }
+  ],
+  "videos": [],
+  "tags": [
+    "Hacker News",
+    "Reading"
+  ],
+  "source": "https://github.com/FerroUI/Ember"
+}

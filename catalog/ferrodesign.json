@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "ferrodesign",
+  "name": "FerroDesign",
+  "summary": "A canvas for your next big idea.",
+  "description": "A native FerroUI design workspace, right in your browser. Explore a visual canvas and shape your next interface with the speed and feel of a desktop app.",
+  "category": "Design",
+  "author": "FerroUI",
+  "icon": "favicon.svg",
+  "accent": "#A6A0FF",
+  "launch": {
+    "url": "./",
+    "mode": "embed"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/FerroUI/FerroDesign/2eb01e11e5a6a9a7c92f01f774dfd20d6dd61315/docs/evidence/2026-10-22-f36dabf7/WebGL2-initial.png",
+      "alt": "FerroDesign with an editable mobile banking design"
+    }
+  ],
+  "videos": [],
+  "tags": [
+    "Design",
+    "Creative tools"
+  ],
+  "source": "https://github.com/FerroUI/FerroDesign"
+}

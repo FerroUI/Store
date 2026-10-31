@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ferroui.github.io/FerroStore/manifest.schema.json",
+  "schemaVersion": 1,
+  "id": "your-app",
+  "name": "Your app",
+  "summary": "A short reason to try your app.",
+  "description": "Describe what people can do with your app.",
+  "category": "Productivity",
+  "author": "Your name",
+  "icon": "./icon.svg",
+  "accent": "#76E4CF",
+  "version": "1.0.0",
+  "launch": {
+    "url": "./",
+    "mode": "embed"
+  },
+  "screenshots": [
+    {
+      "url": "./media/home.webp",
+      "alt": "The main workspace"
+    }
+  ],
+  "videos": [
+    {
+      "url": "./media/demo.mp4",
+      "alt": "A short guided tour",
+      "type": "video/mp4"
+    }
+  ],
+  "tags": [
+    "Tools"
+  ],
+  "source": "https://github.com/your-name/your-app"
+}

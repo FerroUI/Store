@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "solitaire",
+  "name": "Solitaire",
+  "summary": "Your next well-earned break.",
+  "description": "Settle into a classic. Play Klondike, FreeCell and Spider Solitaire in a FerroUI card game that runs directly in your browser.",
+  "category": "Games",
+  "author": "FerroUI",
+  "icon": "favicon.svg",
+  "accent": "#8BD5A4",
+  "launch": {
+    "url": "./",
+    "mode": "embed"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/FerroUI/Solitaire/0b72b7d46afcddeb299e6636231a3ad465fcae66/docs/images/klondike-browser.png",
+      "alt": "A Klondike game in Ferro Solitaire"
+    }
+  ],
+  "videos": [],
+  "tags": [
+    "Cards",
+    "Klondike",
+    "FreeCell",
+    "Spider"
+  ],
+  "source": "https://github.com/FerroUI/Solitaire"
+}

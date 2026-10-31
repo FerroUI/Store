@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, interactive-widget=resizes-content"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Discover apps built with FerroUI. Explore design tools, useful utilities, thoughtful readers, and classic games, right in your browser."
+    />
+    <title>Ferro Store — Discover</title>
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <main
+      id="out"
+      aria-label="Ferro Store — discover apps built with FerroUI"
+    ></main>
+    <div id="splash" role="status">
+      <img src="./icon.svg" width="60" height="60" alt="" />
+      <h1>ferro store</h1>
+      <p>Great apps, built with Ferro.</p>
+      <span class="loading"></span>
+      <p id="loading-message">Opening the collection…</p>
+    </div>
+    <dialog id="app-dialog" aria-labelledby="dialog-title">
+      <header>
+        <div>
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-description"></p>
+        </div>
+        <div class="dialog-actions">
+          <a id="external-link" target="_blank" rel="noopener noreferrer"
+            >Open in new tab ↗</a
+          ><button id="close-dialog" aria-label="Close app preview">
+            Close ✕
+          </button>
+        </div>
+      </header>
+      <div id="dialog-content"></div>
+    </dialog>
+    <noscript
+      ><section class="no-script">
+        <h1>Ferro Store</h1>
+        <p>Enable JavaScript for the storefront, or open an app directly.</p>
+        <a href="https://ferroui.github.io/FerroDesign/">FerroDesign</a> ·
+        <a href="https://ferroui.github.io/calculator/">Calculator</a> ·
+        <a href="https://ferroui.github.io/Ember/">Ember</a> ·
+        <a href="https://ferroui.github.io/Solitaire/">Solitaire</a>
+      </section></noscript
+    >
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

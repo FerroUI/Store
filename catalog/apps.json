@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ferrodesign",
+    "manifest": "https://ferroui.github.io/FerroDesign/ferro-app.json",
+    "fallback": "catalog/ferrodesign.json"
+  },
+  {
+    "id": "calculator",
+    "manifest": "https://ferroui.github.io/calculator/ferro-app.json",
+    "fallback": "catalog/calculator.json"
+  },
+  {
+    "id": "ember",
+    "manifest": "https://ferroui.github.io/Ember/ferro-app.json",
+    "fallback": "catalog/ember.json"
+  },
+  {
+    "id": "solitaire",
+    "manifest": "https://ferroui.github.io/Solitaire/ferro-app.json",
+    "fallback": "catalog/solitaire.json"
+  }
+]

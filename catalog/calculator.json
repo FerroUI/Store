@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "calculator",
+  "name": "Calculator",
+  "summary": "A little clarity for every calculation.",
+  "description": "The familiar calculator, built with FerroUI and Rust around the original C++ calculation engine. Switch between Standard, Scientific and Programmer modes.",
+  "category": "Productivity",
+  "author": "FerroUI",
+  "icon": "favicon.svg",
+  "accent": "#76E4CF",
+  "launch": {
+    "url": "./",
+    "mode": "embed"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/FerroUI/calculator/c9343c8ef39b823ce82b7ca96678515a8559c7bf/docs/images/scientific-light.png",
+      "alt": "Scientific mode in Ferro Calculator"
+    }
+  ],
+  "videos": [],
+  "tags": [
+    "Calculator",
+    "Scientific",
+    "Utilities"
+  ],
+  "source": "https://github.com/FerroUI/calculator"
+}

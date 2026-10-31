@@ -1,0 +1,29 @@
+Use case: ui-mockup.
+Asset type: high fidelity design-review mockup, not implementation code.
+
+Redesign the existing Ferro Store interface in reference image 1 into a substantially more Apple Mac App Store inspired experience, informed by the Microsoft Store's visual merchandising. Keep the product named "Ferro Store" and the same four real apps: FerroDesign, Calculator, Ember, Solitaire. This is the next design revision of that product. Do NOT copy Apple's or Microsoft's logos, copyrighted promotional art, fake app reviews, ratings or download statistics.
+
+Input images:
+Image 1 is the current storefront screenshot: the redesign target. Preserve product identity, app names and functional intent, but change the visual design completely.
+Image 2 is an actual FerroDesign workspace screenshot, a supporting insert to use in featured artwork.
+Image 3 is an actual Ember reader screenshot, a supporting insert.
+Image 4 is an actual Calculator screenshot, a supporting insert.
+Image 5 is an actual Solitaire screenshot, a supporting insert.
+Use these real app screenshots accurately as screen content, rather than making up different app interfaces.
+
+Produce one polished flat UI design board in a wide landscape composition. A large desktop storefront occupies approximately 78% of the board on the left; a matching narrow mobile screen occupies the right. Put both on a subtle warm-gray design-board background with only very faint shadows. No laptops, devices, hands, perspective or browser chrome. Show the interface itself clearly and large.
+
+Design direction: premium, restrained, approachable and unmistakably an app storefront, especially inspired by Apple's Mac App Store. Use a luminous white main surface, a softly frosted light-gray sidebar, near-black typography, quiet hairline dividers, blue interactive accents, spacious editorial hierarchy, generous rounded feature art, and neatly aligned compact app rows. SF-like typography, visually similar to Inter. Avoid a giant marketing slogan at the top, noisy border boxes, repeated controls and dashboard styling.
+
+Desktop:
+A 210px sidebar with a modest blue rounded-square F mark and "Ferro Store", a small search field, and navigation with simple blue line icons: Discover (selected with a soft blue-gray highlight), Create, Work, Read, Play. Quiet "Built with FerroUI" at the bottom.
+Main content begins with "Discover" as a clear 32px editorial heading, and a very small secondary caption "Great apps, built with Ferro." Place a tiny refresh icon in the upper right.
+Two large featured editorial panels under the heading: one wide pale-lavender FerroDesign feature, one smaller deep-green Solitaire feature. The FerroDesign feature has the small overline "MAKE SOMETHING GREAT", the heading "Make room for your next idea.", a short native design-workspace caption, and an artfully positioned actual FerroDesign screenshot with a soft shadow. Feature the app, not an unrelated illustration. The Solitaire feature uses actual card-game imagery from its screenshot in an elegant crop and the short headline "A little time to play." White text against the green.
+Under features, a section titled "Made with Ferro" with a small "Explore all" text link. Show the four apps as tidy app-store rows in a two-column, two-row arrangement. Each row has a distinctive rounded-square app icon (purple F for FerroDesign, familiar calculator for Calculator, orange flame/e for Ember, playing cards for Solitaire), app name, a concise subtitle and an "OPEN" pill action in blue text on a pale-gray background. Keep the background white; rows separated with very light dividers, not heavy card outlines.
+A lower "For your everyday" editorial section has two medium story cards: "A little more clarity." with the real Calculator screenshot on a soft pale-blue field, and "A little more curiosity." with the real Ember screenshot on a soft peach field. These should make the page feel curated, not cluttered. All apps run in the browser; do not suggest purchase or installation.
+Do not include developer manifest jargon, version numbers, ratings, pricing, invented popularity stats or extensive marketing copy.
+
+Mobile:
+Matching white light design. No persistent sidebar. A compact "Ferro Store" header, search affordance, "Discover" heading, a horizontally swipable featured card showing FerroDesign, then compact app rows stacked vertically with OPEN pill buttons. A restrained bottom navigation with Discover, Apps, Play. Show enough of the screen to communicate how the layout adapts.
+
+Typography and spacing should be exceptionally well considered and readable. Keep screenshot content faithful. Make this look like an experienced product designer's concrete next revision ready for review.

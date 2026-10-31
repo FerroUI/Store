@@ -1,0 +1,6 @@
+{
+  "https://raw.githubusercontent.com/FerroUI/FerroDesign/2eb01e11e5a6a9a7c92f01f774dfd20d6dd61315/docs/evidence/2026-10-22-f36dabf7/WebGL2-initial.png": "./media/ferrodesign.png",
+  "https://raw.githubusercontent.com/FerroUI/calculator/c9343c8ef39b823ce82b7ca96678515a8559c7bf/docs/images/scientific-light.png": "./media/calculator.png",
+  "https://raw.githubusercontent.com/FerroUI/Ember/00ee6e012798750695c7ae132626870fc5769ebd/docs/images/ember-desktop-light.png": "./media/ember.png",
+  "https://raw.githubusercontent.com/FerroUI/Solitaire/0b72b7d46afcddeb299e6636231a3ad465fcae66/docs/images/klondike-browser.png": "./media/solitaire.png"
+}
