@@ -7,8 +7,8 @@ A native FerroUI app store for GitHub Pages. Search and browse apps, open their 
 Requirements: Node 24, Rust, and the Emscripten SDK. The framework is a pinned Git submodule; clone recursively:
 
 ```sh
-git clone --recurse-submodules https://github.com/FerroUI/FerroStore.git
-cd FerroStore
+git clone --recurse-submodules https://github.com/FerroUI/Store.git
+cd Store
 npm ci
 vendor/FerroUI/scripts/browser/setup.sh ~/browser-tools
 source ~/browser-tools/env.sh
@@ -59,7 +59,7 @@ Each app has a shareable hash route, e.g. `#calculator`, which works on Pages wi
 
 ## Publish the store
 
-The GitHub Actions workflow tests the metadata code, builds the native browser app, runs browser checks, uploads `dist/`, then deploys main to GitHub Pages. Pull requests build and test without deploying. Set **Settings → Pages → Source → GitHub Actions** once. The expected project URL is `https://ferroui.github.io/FerroStore/`. The workflow uses the pinned framework revision including its Reveal light registry fix; update that submodule deliberately when upgrading Ferro.
+The GitHub Actions workflow tests the metadata code, builds the native browser app, runs browser checks, uploads `dist/`, then deploys main to GitHub Pages. Pull requests build and test without deploying. Set **Settings → Pages → Source → GitHub Actions** once. The expected project URL is `https://ferroui.github.io/Store/`. The workflow uses the pinned framework revision including its Reveal light registry fix; update that submodule deliberately when upgrading Ferro.
 
 ## Checks
 
