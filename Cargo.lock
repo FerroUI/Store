@@ -159,7 +159,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-base"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "bitflags",
  "ferroui-build-scan",
@@ -174,7 +174,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-browser"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
  "ferroui-controls",
@@ -186,7 +186,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-build"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
  "ferroui-build-scan",
@@ -198,7 +198,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-build-scan"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -207,7 +207,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-controls"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "bitflags",
  "ferroui-base",
@@ -219,7 +219,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-dialogs"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
  "ferroui-build",
@@ -230,7 +230,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-fonts-inter"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
  "ferroui-controls",
@@ -238,7 +238,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-harfbuzz"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
  "ferroui-controls",
@@ -247,14 +247,14 @@ dependencies = [
 
 [[package]]
 name = "ferroui-markup"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
 ]
 
 [[package]]
 name = "ferroui-markup-xaml"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
  "ferroui-build-scan",
@@ -264,7 +264,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-markup-xaml-loader"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
  "ferroui-build-scan",
@@ -274,14 +274,14 @@ dependencies = [
 
 [[package]]
 name = "ferroui-metal"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
 ]
 
 [[package]]
 name = "ferroui-opengl"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
  "ferroui-build-scan",
@@ -292,11 +292,14 @@ dependencies = [
 
 [[package]]
 name = "ferroui-remote-protocol"
-version = "0.4.0"
+version = "0.5.0-preview.1"
+dependencies = [
+ "uuid",
+]
 
 [[package]]
 name = "ferroui-skia"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "cc",
  "ferroui-base",
@@ -309,14 +312,14 @@ dependencies = [
 
 [[package]]
 name = "ferroui-system"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "smallvec",
 ]
 
 [[package]]
 name = "ferroui-themes-winui"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ferroui-base",
  "ferroui-build",
@@ -327,7 +330,7 @@ dependencies = [
 
 [[package]]
 name = "ferroui-vulkan"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "ash",
  "ferroui-base",
@@ -358,6 +361,30 @@ dependencies = [
  "crc32fast",
  "miniz_oxide",
  "zlib-rs",
+]
+
+[[package]]
+name = "futures-core"
+version = "0.3.34"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "92d699e522242e69e3003b94ecc1f960f3a5e015aa7c5d7486e65ad01dd94f5e"
+
+[[package]]
+name = "futures-task"
+version = "0.3.34"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cd417de3d1d015fc3bfd2b1ea46dfc7bab72ef86f1cc7cc9c78e728b34a6d1fd"
+
+[[package]]
+name = "futures-util"
+version = "0.3.34"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0d50a92467f8ba5dd6e3ee5d4bd04d73ab2e4e1c44474a0674821dfce14b79bc"
+dependencies = [
+ "futures-core",
+ "futures-task",
+ "pin-project-lite",
+ "slab",
 ]
 
 [[package]]
@@ -412,6 +439,17 @@ name = "itoa"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
+
+[[package]]
+name = "js-sys"
+version = "0.3.106"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7883d941dae510fb2d978fc3fe018c71c9e2892fd38854de3e8b92c2e5ad9cc5"
+dependencies = [
+ "cfg-if",
+ "futures-util",
+ "wasm-bindgen",
+]
 
 [[package]]
 name = "libc"
@@ -518,6 +556,12 @@ name = "paste"
 version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a"
+
+[[package]]
+name = "pin-project-lite"
+version = "0.2.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a89322df9ebe1c1578d689c92318e070967d1042b512afbe49518723f4e6d5cd"
 
 [[package]]
 name = "pkg-config"
@@ -727,6 +771,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "slab"
+version = "0.4.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0c790de23124f9ab44544d7ac05d60440adc586479ce501c1d6d7da3cd8c9cf5"
+
+[[package]]
 name = "smallvec"
 version = "1.16.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -839,6 +889,16 @@ name = "unicode-ident"
 version = "1.0.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
+
+[[package]]
+name = "uuid"
+version = "1.29.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4a0e2d11620c50695fe12bbbfde96b3477fe606e7284c22d505c12ce51214514"
+dependencies = [
+ "js-sys",
+ "wasm-bindgen",
+]
 
 [[package]]
 name = "wasm-bindgen"
@@ -1019,7 +1079,7 @@ checksum = "23b97319f7b8343df12cc98938e5c3eb436064524c8d2b4e30a1d3a36eecdf81"
 
 [[package]]
 name = "xamlx"
-version = "0.4.0"
+version = "0.5.0-preview.1"
 dependencies = [
  "roxmltree",
 ]
