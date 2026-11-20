@@ -246,7 +246,7 @@ try {
   ]) {
     const a = document.createElement("a");
     a.textContent = `${name} ↗  `;
-    a.href = `https://ferroui.github.io/${path}/`;
+    a.href = `https://ferroui.com/${path}/`;
     links.append(a);
   }
   document.querySelector("#splash")?.append(links);

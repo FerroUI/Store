@@ -29,7 +29,7 @@ Open http://127.0.0.1:4173. Build output is in `dist/`, with relative asset path
 
 The runtime only reads URLs in the registry; apps cannot add other apps. A manifest cannot change its registered ID, use executable URL schemes, or launch on a different origin. Manifest strings are plain text. Remote icons/screenshots need CORS for conversion into Ferro bitmaps. HTML images and videos in the gallery can use ordinary public URLs.
 
-For hosts other than the store's origin, serve manifests with `Access-Control-Allow-Origin: *` (or the store origin). GitHub Pages project sites under `ferroui.github.io` share an origin. There is no runtime proxy or backend. A completely unavailable store server cannot be visited offline; the listing cache is a resilience feature once the store has loaded.
+For hosts other than the store's origin, serve manifests with `Access-Control-Allow-Origin: *` (or the store origin). GitHub Pages project sites of the FerroUI organization are served under `https://ferroui.com` and share that origin. There is no runtime proxy or backend. A completely unavailable store server cannot be visited offline; the listing cache is a resilience feature once the store has loaded.
 
 ## Publish an app manifest
 
@@ -59,7 +59,7 @@ Each app has a shareable hash route, e.g. `#calculator`, which works on Pages wi
 
 ## Publish the store
 
-The GitHub Actions workflow tests the metadata code, builds the native browser app, runs browser checks, uploads `dist/`, then deploys main to GitHub Pages. Pull requests build and test without deploying. Set **Settings → Pages → Source → GitHub Actions** once. The expected project URL is `https://ferroui.github.io/Store/`. The workflow uses the pinned framework revision including its Reveal light registry fix; update that submodule deliberately when upgrading Ferro.
+The GitHub Actions workflow tests the metadata code, builds the native browser app, runs browser checks, uploads `dist/`, then deploys main to GitHub Pages. Pull requests build and test without deploying. Set **Settings → Pages → Source → GitHub Actions** once. The expected project URL is `https://ferroui.com/Store/`. The workflow uses the pinned framework revision including its Reveal light registry fix; update that submodule deliberately when upgrading Ferro.
 
 ## Checks
 

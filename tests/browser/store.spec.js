@@ -86,7 +86,7 @@ test("launches an iframe, closes it with Escape, and offers a separate tab", asy
   await expect(page.getByRole("dialog")).toBeVisible();
   await expect(page.locator("iframe")).toHaveAttribute(
     "src",
-    "https://ferroui.github.io/calculator/",
+    "https://ferroui.com/calculator/",
   );
   await expect(
     page.getByRole("link", { name: "Open in new tab" }),
@@ -97,7 +97,7 @@ test("launches an iframe, closes it with Escape, and offers a separate tab", asy
   const popup = page.waitForEvent("popup");
   await button(page, "Open in new tab  ↗");
   const tab = await popup;
-  await expect(tab).toHaveURL("https://ferroui.github.io/calculator/");
+  await expect(tab).toHaveURL("https://ferroui.com/calculator/");
   await tab.close();
 });
 test("live metadata updates a listing and supports screenshot and video previews", async ({
@@ -114,13 +114,13 @@ test("live metadata updates a listing and supports screenshot and video previews
         description: "The newest description.",
         screenshots: [
           {
-            url: "https://ferroui.github.io/calculator/favicon.svg",
+            url: "https://ferroui.com/calculator/favicon.svg",
             alt: "Standard calculator screenshot",
           },
         ],
         videos: [
           {
-            url: "https://ferroui.github.io/calculator/demo.mp4",
+            url: "https://ferroui.com/calculator/demo.mp4",
             alt: "Calculator tour",
             type: "video/mp4",
           },
@@ -182,7 +182,7 @@ test("mobile featured apps scroll horizontally and launch directly", async ({
   await expect(page.getByRole("dialog")).toBeVisible();
   await expect(page.locator("iframe")).toHaveAttribute(
     "src",
-    "https://ferroui.github.io/Solitaire/",
+    "https://ferroui.com/Solitaire/",
   );
 });
 test("captures desktop, mobile, detail, and tablet layouts for visual review", async ({
