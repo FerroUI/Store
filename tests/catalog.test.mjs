@@ -13,7 +13,7 @@ const raw = JSON.parse(
 );
 const entry = {
   id: "calculator",
-  manifest: "https://ferroui.github.io/calculator/ferro-app.json",
+  manifest: "https://ferroui.com/calculator/ferro-app.json",
 };
 const app = validateManifest(raw, entry.manifest, entry.id);
 const bundle = { registry: [entry], apps: [app] };
@@ -26,8 +26,8 @@ const ok = (value) => async () =>
     headers: { "content-type": "application/json" },
   });
 test("resolves app-relative URLs beneath the app project path", () => {
-  assert.equal(app.icon, "https://ferroui.github.io/calculator/favicon.svg");
-  assert.equal(app.launch.url, "https://ferroui.github.io/calculator/");
+  assert.equal(app.icon, "https://ferroui.com/calculator/favicon.svg");
+  assert.equal(app.launch.url, "https://ferroui.com/calculator/");
 });
 test("rejects unsupported versions, identity swaps, unsafe URLs, other origins, and invalid launch modes", () => {
   for (const patch of [
@@ -57,7 +57,7 @@ test("supports screenshots and demo videos with app-relative URLs", () => {
   );
   assert.equal(
     a.screenshots[0].url,
-    "https://ferroui.github.io/calculator/screens/one.png",
+    "https://ferroui.com/calculator/screens/one.png",
   );
   assert.equal(a.videos[0].type, "video/webm");
 });
@@ -99,7 +99,7 @@ test("independent fetches update fast apps while slower apps are pending", async
   const slow = new Promise((r) => (finish = r));
   const e2 = {
     id: "ember",
-    manifest: "https://ferroui.github.io/Ember/ferro-app.json",
+    manifest: "https://ferroui.com/Ember/ferro-app.json",
   };
   const emberRaw = JSON.parse(
     await readFile(new URL("../catalog/ember.json", import.meta.url)),
